@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styleQR.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <title>QR-Code</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="qrcode">
+            <p class="message">Lấy Mã Này Để Đăng Kí Tiêm Chủng</p>
+            <div id="QrCode"></div>
+
+            <div class="listbtn">
+                <button class="bntDone">Kết Thúc <i class="fal fa-check-circle"></i></button>
+                <button class="bntdownload" href="../image/qrcode.png" download="">Tải Về <i
+                        class="fal fa-arrow-to-bottom"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src='https://cdn.rawgit.com/lrsjng/jquery-qrcode/v0.9.5/dist/jquery.qrcode.min.js'></script>
+    <script src="./scriptQR.js"></script>
+</body>
+
+</html>

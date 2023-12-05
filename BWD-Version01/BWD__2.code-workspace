@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Downloads\\vaccinationRegister-20220617T145815Z-001\\vaccinationRegister"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BWD__2",
+		"liveServer.settings.port": 5501
+	}
+}

@@ -1,0 +1,119 @@
+/* start modal list user */
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Roboto;
+}
+
+.modal {
+    display: block; 
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+  }
+  
+.modal-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .modal-content { 
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%; 
+    height: 40%;
+    border-radius: 5px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -20px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+.modal-content > h2 {
+    text-align: center;
+} 
+.list-item {
+    display: flex; 
+    flex-flow: column;
+    justify-content: center;
+}
+
+.item {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+/* list  */
+.container{
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+
+.container ul{
+ position: relative;
+ background: #fff;
+ margin-top: 15px;
+}
+
+.container ul li {
+ list-style: none;
+ padding: 10px;
+ width: 100%;
+ background: #fff;
+ box-shadow: 0 5px 15px rgba(0,0,0,.1);
+ transition: transform 0.5s;
+}
+.container ul li span{
+ width: 40px;
+ height: 40px;
+ text-align: center;
+ line-height: 40px;
+ background: #19bc9c;
+ color: #fff;
+ display: inline-block;
+ border-radius: 50%;
+ margin-right: 40px;
+ font-size:16px;
+ font-weight: bold;
+}
+
+.container ul:hover li {
+ opacity: 0.2;
+}
+.container ul li:hover{
+ transform: scale(1.1);
+ z-index: 10;
+ background: #19bc9c;
+ box-shadow: 0 5px 25px rgba(0,0,0,.2);
+ color: #fff;
+ opacity: 1;
+}
+.container ul li:hover span {
+ background: #fff;
+ color: #19bc9c;
+}
+
+/* end modal list user */

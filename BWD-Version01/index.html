@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styleList.css">
+    <script src="https://kit.fontawesome.com/0634ae970e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+    <title>Document</title>
+</head>
+<body>
+  <section class="module">
+
+    <h1 class="module__heading module__heading--d">Danh sách sàng lọc tiêm chủng</h1>
+
+    <ol class="custom-bullet custom-bullet--d" id="root">
+    </ol>
+
+  </section>
+  <!-- bảng thông báo từ sàng lọc-------------------------------------------------------------------------------------------- -->
+  <div id="myNotification" class="notification">
+
+    <!-- Modal content -->
+    <div class="notification__content">
+        <div class="notification__header">
+            <div class="notification__tieude">Thông tin đã sàng lọc</div>
+        </div>
+        <div class="notification__body">
+            <div class="notification__body__personalinformation" id="container__card">
+              <div style="width: 80%; height: 5000px"></div>
+            </div>
+            <ol type="1" class="notification__body__infomation">
+                <li>Tiền sử phản vệ từ độ 2 trở lên: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                    <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li>
+                <li>Tiền sử bị COVID-19 trong vòng 6 tháng: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                            <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li>
+                <li>Tiền sử tiêm vắc xin khác trong 14 ngày qua: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                                    <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Tiền sử suy giảm miễn dịch, ung thư giai đoạn cuối, cắt lách, xơ gan mất bù... : <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                                                                    <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Đang dùng thuốc ức chế miễn dịch, corticoid liều ca 
+                    (tương đương hoặc hơn 2mg prednisolon/kg/ngày trong ít nhất 7 ngày) hoặc điều trị hóa trị, xạ trị: có<i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                                                                                        <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Bệnh cấp tính: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                    <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Tiền sử bệnh mạn tính, đang tiến triển: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                            <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Tiền sử bệnh mạn tính đã điều trị ổn: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                            <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Đang mang thai, phụ nữ đang nuôi con bằng sữa mẹ: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                                        <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Độ tuổi: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                            <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Tiền sử rối loạn đông máu/cầm máu hoặc đang dùng thuốc chống đông: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                                                        <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+                <li>Tiền sử dị ứng với các dị nguyên khác: <i class="fa-solid fa-triangle-exclamation" id="notification__warning"></i>
+                                                            <i class="fa-solid fa-circle-xmark" id="notification__dangerous"></i></li></li>
+            </ol>
+        </div>
+        <div class="notification__body__button">
+          <button class="notification__body__button--tiem" id="notification__body__3button">Xác nhận tiêm</button>
+          <button class="notification__body__button--hoantiem" id="notification__body__3button">Tạm hoãn tiêm</button>
+          <button class="notification__body__button--khongtiem" id="notification__body__3button">Chống chỉ định tiêm</button>
+      </div>
+        <div class="notification__footer">
+            <b class="notification__footer__note">Lưu ý: </b>
+            <br>
+            <i class="fa-solid fa-triangle-exclamation" id="notification__footer__warning"></i> : Tạm hoãn tiêm chủng Covid - 19<br>
+            <i class="fa-solid fa-circle-xmark" id="notification__footer__dangerous"></i> : Chống chỉ định tiêm chủng Covid - 19
+        </div>
+    </div>
+</div>
+
+    <div class="container">
+        <div class="table">
+            <header><b>XÁC THỰC BỆNH TẬT</b></header>        
+                <table class="table table-striped ">
+                    <thead>
+                        <tr>
+                          <th scope="col">Tiền sử</th>
+                          <th scope="col">Triệu chứng</th>
+                          <th scope="col">có</th>
+                          <th scope="col">Không</th>
+                          <th scope="col">Không rõ</th>
+                        </tr>
+                      </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1. Tiền sử phản vệ từ độ 2 trở lên</th>
+                        <td>
+                            <input type="text" placeholder="Nếu có, ghi rõ loại tác nhân dị ứng">
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2. Tiền sử bị COVID-19 trong vòng 6 tháng	</th>
+                        <td></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3. Tiền sử tiêm vắc xin khác trong 14 ngày qua	</th>
+                        <td>
+                            <input type="text" placeholder="Nếu có, ghi rõ loại vắc xin">
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4. Tiền sử suy giảm miễn dịch</th>
+                        <td>
+                            <input type="text" placeholder="Nếu có, ghi rõ loại vắc xin">
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">5. Đang dùng thuốc ức chế miễn dịch </th>
+                        <td>
+                            <input type="text" placeholder="Nếu có, ghi rõ loại vắc xin">
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">6. Bệnh cấp tính</th>
+                        <td>
+                            <input type="text" placeholder="Nếu có, ghi rõ loại vắc xin">
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">7. Tiền sử bệnh mạn tính, đang tiến triển</th>
+                        <td>
+                            <input type="text" placeholder="Nếu có, ghi rõ loại vắc xin">
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">8. Tiền sử bệnh mạn tính đã điều trị ổn	</th>
+                        <td>
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">9. Đang mang thai</th>
+                        <td>
+                        </td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                        <td><input type="radio" name="" id=""></td>
+                      </tr>
+                    </tbody>
+                  </table>
+            <button class="btnDone">Hoàn Thành</button>
+        </div>
+    </div>
+    <div class="overlay">
+    </div>
+    <div id="toggle">
+      <i class="fa fa-bars"></i>
+    </div>
+    
+    <script src="/script.js"></script>
+</body>
+</html>

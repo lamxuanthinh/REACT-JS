@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Y Tá Tiêm Chủng</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/solid.js"
+        integrity="sha384-/BxOvRagtVDn9dJ+JGCtcofNXgQO/CCCVKdMfL115s3gOgQxWaX/tSq5V8dRgsbc"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/fontawesome.js"
+        integrity="sha384-dPBGbj4Uoy1OOpM4+aRGfAOc0W37JkROT+3uynUgTHZCHZNMHfGXsmmvYTffZjYO"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https:
+        //use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+         crossorigin="anonymous" />
+    <link rel="stylesheet" href="../NurseModule/style.css">
+</head>
+
+<body style="position:relative;">
+    <!-- start heading -->
+    <div style="">
+
+    </div>
+    <div class="heading">
+        <ul class="heading-list">
+            <li class="heading-item"><img src="./image/logo.png" alt="logo"></li>
+            <li class="heading-item address"><i style="color: #fff;" class="fas fa-cog editicon"></i></li>
+            <li id="profile" class="heading-item ">
+                </i><img src="./image/avata.png" alt="avata">
+            </li>
+        </ul>
+    </div>
+    <!-- end heading -->
+
+    <!-- start qr code -->
+    <div id="video-container">
+        <video id="qr-video" class="qr-video"></video>
+    </div>
+
+
+    <!-- star modal profile -->
+    <div id="myModal-profile" class="modal-profile1">
+        <!-- Modal content -->
+        <div class="modal-center-profile">
+            <div class="modal-content-profile">
+                <span class="close-profile">&times;</span>
+                <div class="data-profile">
+                    <h2>THÔNG TIN TÀI KHOẢN</h2>
+                    <div class="image-profile">
+                        <img src="./image/avata.png" alt="">
+                    </div>
+                    <p class="item-data-profile">Tên : Nguyễn Thị Nhi</p>
+                    <p class="item-data-profile">Ngày Sinh : 11/02/1996</p>
+                    <p class="item-data-profile">Giới Tính : Nữ</p>
+                    <p class="item-data-profile">Địa Chỉ : Tân An , Hội An , Quảng Nam</p>
+                    <p class="item-data-profile">Chức Vụ : Y Tá</p>
+                </div>
+                <div class="btnModalProfile">
+                    <button class="outpage">Đăng Xuất</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- end modal profile -->
+
+    <!-- star modal scanner -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-center">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="data-user">
+                    <h2>XÁC THỰC THÔNG TIN</h2>
+                    <p class="item-data-user">Họ Và Tên : <span class="name"></span>  </p>
+                    <p class="item-data-user">Ngày Sinh : <span class="age"></span> </p>
+                    <p class="item-data-user">Giới Tính : <span class="sex"></span> </p>
+                    <p class="item-data-user">Địa Chỉ : <span class="address1"></span> </p>
+                    <div class="item-data-user">
+                        <label for="">Số Điện Thoại :</label>
+                        <input type="text" class="numberphone" value="" >
+                    </div>
+                    <div class="bntModal">
+                        <button class="btnclose" type="button">Thoát</button>
+                        <button class="btnDone" type="button">Xác Thực</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal scanner -->
+    <script src="../NurseModule/script.js" type="module"></script>
+</body>
+
+</html>

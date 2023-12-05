@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Đăng Kí Mã Tiêm Chủng</title>
+  <!-- logo -->
+  <link rel="icon" href="../Home/Home-Page/assets/img/logo-version04-fococlipping-standard.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- boostrap  -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./LoadingPage/styleLoading.css">
+</head>
+
+<body>
+  <div class="containerRegister">
+    <header>ĐĂNG KÍ TIÊM CHỦNG</header>
+    <form action="#" id="qrRegister">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Thông Tin Cá Nhân</span>
+
+          <div class="fields name">
+            <div class="input-field">
+              <label>Họ Và Tên <span class="bound">(*)</span></label>
+              <input id="name" class="name1" type="text" placeholder="Họ và tên">
+
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>Ngày sinh <span class="bound">(*)</span></label>
+              <input id="age" class="dob" type="date" placeholder="Enter birth date">
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>CCCD/Mã định danh công dân <span class="bound">(*)</span></label>
+              <input id="codePeople" type="text" placeholder="Mã định danh công dân">
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>Số điện thoại <span class="bound">(*)</span></label>
+              <input id="Phone" class="phone1" type="tel" placeholder="Số Điện Thoại">
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>Giới tính <span class="bound">(*)</span></label>
+              <select id="sex" class="gender">
+                <option disabled selected>Giới tính</option>
+                <option>Nam</option>
+                <option>Nữ</option>
+                <option>Khác</option>
+              </select>
+              <span class="warning"></span>
+            </div>
+            <div class="input-field">
+              <label>Dân Tộc <span class="bound">(*)</span></label>
+              <select id="ethnic">
+                <option disabled selected>Dân Tộc</option>
+                <option>Kinh</option>
+                <option>Thái</option>
+                <option>Mông</option>
+                <option>Tày</option>
+                <option>Hoa</option>
+              </select>
+              <span class="warning"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="details ID">
+          <span class="title">Địa Chỉ Liên Lạc</span>
+
+          <div class="fields">
+
+            <div class="input-field">
+              <label>Tỉnh/Thành phố <span class="bound">(*)</span></label>
+              <select id="city">
+                <option disabled selected>Tỉnh/Thành phố</option>
+                <option>Quảng Nam</option>
+                <option>Quảng Trị</option>
+                <option>Phú Yên</option>
+                <option>Nghệ An</option>
+                <option>Đà Nẵng</option>
+              </select>
+              <span class="warning"></span>
+            </div>
+            <div class="input-field">
+              <label>Quận/Huyện <span class="bound">(*)</span></label>
+              <select id="district">
+                <option disabled selected>Quận/Huyện</option>
+                <option>Thăng Bình</option>
+                <option>Hội An</option>
+                <option>Quế Sơn</option>
+                <option>Hà Lam</option>
+                <option>Tam Kỳ</option>
+              </select>
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>Xã/Phường <span class="bound">(*)</span></label>
+              <select id="commune">
+                <option disabled selected>Xã/Phường</option>
+                <option>Tân An</option>
+                <option>Cẩm Châu</option>
+                <option>Thanh Hà</option>
+                <option>Cẩm Nam</option>
+                <option>Sơn Phong</option>
+              </select>
+              <span class="warning"></span>
+            </div>
+            <div class="input-field">
+              <label>Quốc tịch <span class="bound">(*)</span></label>
+              <select id="nationality">
+                <option disabled selected>Quốc tịch</option>
+                <option>Viet Nam</option>
+                <option>Yemen</option>
+                <option>Samoa</option>
+                <option>Samoa</option>
+                <option>Samoa</option>
+              </select>
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>Địa chỉ hiện tại <span class="bound">(*)</span></label>
+              <input id='addressNow' class="address" type="text" placeholder="Địa chỉ hiện tại">
+              <span class="warning"></span>
+            </div>
+
+            <div class="input-field">
+              <label>Số BHYT</label>
+              <input type="text" placeholder="Số BHYT">
+              <span class="warning"></span>
+            </div>
+          </div>
+
+          <button class="nextBtn" class="sumbit" type="button">
+            <span class="btnText">Hoàn Thành <i class="fa-solid fa-check"></i></span>
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Start Modal confirm with number phone -->
+  <!-- data-target="#exampleModal" data-toggle="modal" -->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">XÁC THỰC SỐ ĐIỆN THOẠI</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="notifytionPhoneNumber">Bạn đăng kí thành công sau khi xác thực số điện thoại</p>
+          <p class="notifytionPhoneNumber" id="textModal"></p>
+          <div class="codeConfrim">
+            <input  class="inputCode" type="text" name="" id="" maxlength="1">
+            <input  class="inputCode" type="text" name="" id="" maxlength="1">
+            <input  class="inputCode" type="text" name="" id="" maxlength="1">
+            <input  class="inputCode" type="text" name="" id="" maxlength="1">
+            <input  class="inputCode" type="text" name="" id="" maxlength="1">
+            <input  class="inputCode" type="text" name="" id="" maxlength="1">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Thoát</button>
+          <button type="button" id="btnDone" data-dismiss="modal" aria-label="Close"
+            class="btn btn-success btnColor">Xác Thực</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal confirm with number phone -->
+
+  <!-- Start  Loading Page  -->
+  <div class="wrapper">
+    <h1 class="brand">
+      <span>TC-COVID</span>
+      <!-- <span>ID</span> -->
+    </h1>
+    <div class="loading-bar"></div>
+  </div>
+  <!-- End  Loading Page  -->
+  <script src="./script.js"></script>
+  <script src="./LoadingPage/app.js"></script>
+  <script>
+    validator({
+      form: '#qrRegister',
+      formMessage: '.warning',
+      rules: [
+        isRequired('#name'),
+        isNumberPhone('#Phone'),
+        isRequired('#age'),
+        isRequiredSelect('#sex', 'Giới tính'),
+        isRequiredSelect('#ethnic', 'Dân Tộc'),
+        isRequiredSelect('#city', 'Tỉnh/Thành phố'),
+        isRequiredSelect('#district', 'Quận/Huyện'),
+        isRequiredSelect('#commune', 'Xã/Phường'),
+        isRequiredSelect('#nationality', 'Quốc tịch'),
+        isRequired('#addressNow'),
+        isRequiredCodePeople('#codePeople')
+      ],
+      submitData: '.nextBtn',
+      textModal: '#textModal'
+    })
+
+  </script>
+</body>
+
+</html>

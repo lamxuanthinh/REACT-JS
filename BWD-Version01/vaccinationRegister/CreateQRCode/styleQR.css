@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    background: url("bg.png"), -webkit-linear-gradient(bottom,#2c3d4f, #19bc9c);
+    min-height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    width: 50%;
+    border-radius: 5px;
+    flex-flow: column;
+}
+
+.qrcode {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.message {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#QrCode {
+    padding: 30px 30px;
+}
+
+.listbtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.bntDone {
+    border:none;
+    background-color:#19bc9c;
+    color: #000;
+    border-radius: 4px;
+    height: 45px;
+    width: 150px;
+    margin: 0 10px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.bntdownload {
+    border:none;
+    background-color:#19bc9c;
+    color: #000;
+    border-radius: 4px;
+    margin: 0 10px;
+    height: 45px;
+    width: 150px;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.bntdownload:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.bntDone:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* =========Responsive======= */
+
+/* PC */
+@media(min-width: 64em) {}
+
+/* TABLET */
+@media(min-width:46.25em) and (max-width: 63.9375em) {
+
+}
+/* MOBILE */
+@media(max-width:46.1875em){
+    .container {
+        width: 95%;
+    }
+}

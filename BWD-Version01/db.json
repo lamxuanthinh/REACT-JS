@@ -1,0 +1,86 @@
+{
+  "Accounts": [
+    {
+      "id": 1,
+      "cccd": "123",
+      "sdt": "0379124695",
+      "maXacNhan": "YTKT01",
+      "ten": "Hoàng Thế Luân",
+      "anhXacThuc": "avt1.jpg",
+      "vaiTro": "Y Tá Kiểm Tra Sức Khoẻ",
+      "matKhau": "123",
+      "trangThai": false
+    },
+    {
+      "ten": "Lâm Xuân Thịnh",
+      "anhXacThuc": "av4.jpg",
+      "sdt": "0234785412",
+      "maXacNhan": "BST01",
+      "cccd": "12345",
+      "vaiTro": "Bác Sĩ Tiêm Vaccine",
+      "matKhau": "123",
+      "id": 2,
+      "trangThai": false
+    },
+    {
+      "ten": "Nguyễn Viết Việt",
+      "anhXacThuc": "avt3.jpg",
+      "sdt": "0234785412",
+      "maXacNhan": "BSKT01",
+      "cccd": "1234",
+      "vaiTro": "Bác Sĩ Kiểm Tra Sức Khoẻ",
+      "matKhau": "123",
+      "id": 3,
+      "trangThai": true
+    },
+    {
+      "ten": "thinh",
+      "anhXacThuc": "qrcode (3).png",
+      "sdt": "0384930",
+      "maXacNhan": "fdf",
+      "cccd": "839473894",
+      "vaiTro": "Y Tá Kiểm Tra Sức Khoẻ",
+      "matKhau": "123",
+      "id": 4
+    },
+    {
+      "ten": "Nguyen ai phat",
+      "anhXacThuc": "qrcode (2).png",
+      "sdt": "0986374836",
+      "maXacNhan": "BT_1",
+      "cccd": "8403493",
+      "vaiTro": "Y Tá Kiểm Tra Sức Khoẻ",
+      "matKhau": "123",
+      "id": 5
+    },
+    {
+      "ten": "hung lam",
+      "anhXacThuc": "qrcode (1).png",
+      "sdt": "074834",
+      "maXacNhan": "ure",
+      "cccd": "398430",
+      "vaiTro": "Bác Sĩ Tiêm Vaccine",
+      "matKhau": "123",
+      "id": 6
+    },
+    {
+      "name ": "lam xuan thinh",
+      "desc": "vo dich bwd",
+      "key": "2",
+      "id": 7
+    }
+  ],
+  "Users": [
+    {
+      "hoTen": "Ngo Hung So",
+      "queQuan": "Xom Tan Hong, Nghia Thanh, Nghia Dan, Nghe An",
+      "noiThuongTru": "Xom Tan Hong, Nghia Thanh, Nghia Dan, Nghe An",
+      "bhyt": "",
+      "email": "",
+      "sdt": "",
+      "ngaySinh": "15/10/2003",
+      "gioiTinh": "Nam",
+      "id": 1
+    }
+  ]
+}

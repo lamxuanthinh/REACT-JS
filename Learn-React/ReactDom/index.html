@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <title>ReactDome</title>
+    <style>
+        .button {
+            border: none;
+            text-decoration: none;
+            color: #000;
+            background-color: #19bc9c;
+            border-radius: 3px;
+            font-size: 30px;
+            padding: 5px 15px;
+            box-shadow: 1px 1px 4px;
+        }
+
+        .button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="root">
+    </div>
+    <script type="text/babel">
+
+        function Button({ title, href, onClick }) {
+            let Component = 'button'
+            const props = {}
+            if (href) {
+                Component = 'a'
+                props.href = href
+            }
+            if (onClick) {
+                props.onClick = onClick
+            }
+            return (
+                <Component className="button" {...props} >{title}</Component>
+            )
+        }
+
+        function App() {
+            return (
+                <div class="wrapper">
+                    <Button
+                        title="click me!"
+                        href="https://github.com/lamxuanthinh"
+                        onClick={() => console.log(Math.random())}
+                    />
+                </div>
+            )
+        }
+        ReactDOM.render(<App />, document.querySelector('#root'))
+    </script>
+</body>
+
+</html>

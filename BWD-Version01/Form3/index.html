@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+    Bác Sỹ Tiêm Chủng
+  </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- start heading -->
+  <div class="heading">
+    <ul class="heading-list">
+      <li class="heading-item"><img src="../image/logo.png" alt="logo"></li>
+      <li class="heading-item address"><i style="color: #fff;" class="fas fa-cog editicon"></i></li>
+      <li id="profile" class="heading-item ">
+        </i><img src="../image/avata-anh.png" alt="avata">
+      </li>
+    </ul>
+  </div>
+  <!-- end heading -->
+
+  <!-- star modal list  user -->
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-center">
+      <div class="modal-content container">
+        <span class="close">&times;</span>
+        <h2>DANH SÁCH TIÊM CHỦNG</h2>
+        <ul>
+          <li><span>1</span> Lâm Xuân Thịnh</li>
+          <!-- <li><span>2</span> Hoàng Thế Luân</li> -->
+          <!-- <li><span>2</span> Ngô Hùng Sở</li> -->
+          <!-- <li><span>4</span> Nguyễn Hoàng Việt</li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- end modal list user -->
+
+  <div class="container1">
+    <header>Xác thực tiêm chủng</header>
+
+    <form action="#">
+      <div class="form first">
+        <div class="details personal">
+          <span class="title">Thông Tin Cá Nhân</span>
+
+          <div class="fields name">
+            <div class="input-field">
+              <label>Số CCCD/Hộ Chiếu</label>
+              <input type="text" id="cccd" value="049203014076">
+            </div>
+
+            <div class="input-field">
+              <label>Họ Và Tên</label>
+              <input type="text" id="ten" value="Lâm Xuân Thịnh">
+            </div>
+
+            <div class="input-field">
+              <label>Giới Tính</label>
+              <input type="text" id="gender" value="Nam">
+            </div>
+
+            <div class="input-field">
+              <label>Ngày Sinh</label>
+              <input type="text" id="date" value="29/08/2003">
+            </div>
+
+            <div class="input-field">
+              <label>Số Điện Thoại</label>
+              <input type="text" id="sdt" value="0352756331">
+            </div>
+
+            <div class="input-field">
+              <label>Địa Chỉ
+              </label>
+              <input type="text" id="diaChi" value="Thôn Duy Hà,Bình Dương,Thăng Bình, Quảng Nam">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="details ID">
+          <!-- item 2 -->
+          <span class="title">Đã Được Tiêm Vắc Xin Covid-19</span>
+          <br>
+          <div class="details-tiemChung">
+            <a class="details-mui">MŨI TIÊM THỨ 1:</a> <a class="details-date">NGÀY TIÊM: 23/03/2021</a> <a
+              class="details-vaccine">LOẠI VẮC XIN: AstraZeneca</a>
+          </div>
+          <br>
+          <div class="details-tiemChung">
+            <a class="details-mui">MŨI TIÊM THỨ 2:</a> <a class="details-date">NGÀY TIÊM: 27/05/2021</a> <a
+              class="details-vaccine">LOẠI VẮC XIN: AstraZeneca</a>
+          </div>
+          <br>
+          <div class="details-tiemChung">
+            <a class="details-mui">MŨI TIÊM THỨ 3:</a> <a class="details-date">NGÀY TIÊM: 29/011/2021</a> <a
+              class="details-vaccine">LOẠI VẮC XIN: AstraZeneca</a>
+          </div>
+
+          <div class="fields">
+            <div class="input-field">
+              <label>Ngày Tiêm</label>
+              <input type="date" name="" id="">
+            </div>
+            <div class="input-field">
+              <label>Loại Vắc Xin</label>
+              <select>
+                <option disabled="disabled" selected="selected">Loại Vaccine</option>
+                <option>AstraZeneca</option>
+                <option>Gam-COVID-Vac</option>
+                <option>Vero Cell</option>
+                <option>Pfizer/BioNTech</option>
+                <option>Spikevax/Moderna</option>
+                <option>Janssen</option>
+                <option>Hayat-Vax</option>
+                <option>Abdala</option>
+              </select>
+            </div>
+          </div>
+
+
+          <div class="two-button">
+            <button class="btnlist" id="toggle">
+              <span class="btnText">Danh Sách</span>
+              <i class="fa-solid fa-clipboard-list-check"></i>
+            </button>
+            <button class="btnDone">
+              Hoàn Thành
+              <i class="fa-solid fa-check"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="overlay">
+  </div>
+  <script src="main.js"></script>
+  <script src="phieutiem.js"></script>
+</body>
+
+</html>
